@@ -1,0 +1,155 @@
+$successBtn : #218838;
+
+body{
+    overflow-x: hidden;
+}
+
+#showcase{
+    background-image: url('../img/22.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-shadow: #3a3a3a 2px 2px 2px;
+}
+
+#gen-showcase{
+    height: 40vh !important;
+    background-image: url('../img/1576937.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+header{
+    min-height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    overflow: hidden;
+    
+    ul li{
+        margin: 0 5px;
+    }
+    
+    ul a{
+        transition: all 0.5s;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    ul a::before{
+        content: ' ';
+        width: 0px;
+        height: 1px;
+        position: absolute;
+        background-color: $successBtn;
+        top: 100%;
+        left: 0;
+        transition: all 0.5s;
+    }
+    
+    ul li:hover a::before{
+        width: 100%;
+    }
+}
+
+section{
+    min-height: 40vh !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 20vh;
+    
+}
+
+#sponsors{
+    text-align: center;
+    i{
+        font-size: 30px;
+    }
+}
+
+footer{
+    padding: 10vh 0;
+    background-color: #152836;
+    min-height: 30vh;
+    word-wrap: none;
+}
+
+.titles{
+    text-align: center;
+    width: 100vw;
+    h3{
+        font-family: serif;
+        position: relative;
+    }
+
+    h3::before{
+        width: 4vw;
+        height: 2px;
+        content: '';
+        background-color: $successBtn;
+        position: absolute;
+        top: 100%;
+    }
+}
+
+#travel-date{
+    ul{
+         border-left: 1px #3a3a3a solid;
+         padding-left: 12px;
+    }
+   
+    li{
+        list-style-type: circle;
+        margin: 10vh 0;
+    }
+}
+
+#workers{
+    text-align: center;
+}
+
+.page-nav{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#contact-start{
+    text-align: right;
+}
+
+.socials{
+    i{
+        margin: 0 0 0 5vw;
+        font-size: 20px;
+    }
+
+    i:nth-child(1){
+        color:#39579A;
+    }
+
+    i:nth-child(2){
+        color: red;
+    }
+
+    i:nth-child(3){
+        color: #55ACEE;
+    }
+    
+}
+
+#message .col-lg-6:nth-child(2){
+    text-align: right;
+}
